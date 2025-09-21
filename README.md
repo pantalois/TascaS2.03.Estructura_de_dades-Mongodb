@@ -1,4 +1,4 @@
-###TascaS2.03.Estructura_de_dades-Mongodb
+###TascaS2.03.Estructura_de_dades-Mongodb###
 
 ## 📌 Introduction  
 This projectfocuses on the design and modeling of a database for an **optician's shop** using **MongoDB**.  
