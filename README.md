@@ -1,7 +1,7 @@
 # TascaS2.03.Estructura_de_dades-Mongodb #
 
 ## 📌 Introduction  
-This projectfocuses on the design and modeling of a database for an **optician's shop** using **MongoDB**.  
+This project focuses on the design and modeling of a database for an **optician's shop** using **MongoDB**.  
 
 The goal was to understand how to structure information in a NoSQL environment by approaching the design from two different perspectives:  
 
