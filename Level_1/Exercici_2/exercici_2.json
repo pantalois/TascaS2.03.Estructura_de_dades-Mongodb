@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "68ce814aeac7856fa399fb45"
+  },
+  "brand": "Carrera",
+  "frame": {
+    "color": "red",
+    "type": "metallic"
+  },
+  "lens": [
+    "transparent"
+  ],
+  "supplier": {
+    "name": "best supplier",
+    "address": {
+      "street": "Glass Street",
+      "number": "1",
+      "floor": "1",
+      "door": "1-A",
+      "city": "Glass city",
+      "postal_code": "12345",
+      "country": "Glassland"
+    },
+    "phone": "999888777",
+    "fax": "123456789",
+    "nif": "12121212A"
+  },
+  "price": 105.75,
+  "sales_history": [
+    {
+      "client": {
+        "name": "Lois",
+        "address": {
+          "street": "Glass Street",
+          "number": "1",
+          "floor": "1",
+          "door": "1-A",
+          "city": "Glass city",
+          "postal_code": "12345",
+          "country": "Glassland"
+        },
+        "phone": "123123123",
+        "email": "lois@lois.gal",
+        "registration_date": "2023-06-29T10:00:00Z",
+        "recommended_by": null
+      },
+      "employee": "María",
+      "sale_date": "2023-06-29T10:00:00Z"
+    }
+  ]
+}]

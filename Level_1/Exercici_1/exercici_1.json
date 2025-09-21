@@ -1,0 +1,51 @@
+[{
+  "_id": "60dbf6f4f1c2b34a6c9e0004",
+  "name": "Lois",
+  "address": "Carrer Canarias 20",
+  "phone": "666111222",
+  "email": "lois@lois.gal",
+  "register_date": "2023-06-29T10:00:00Z",
+  "recommended_by": null,
+  "last_shoppings": [
+    {
+      "employee": {
+        "name": "Pepe"
+      },
+      "glasses": {
+        "price": 100,
+        "brand": "Carrera",
+        "frame": {
+          "color": "red",
+          "type": "paste"
+        },
+        "lens": {
+          "graduation": {
+            "left": 2.4,
+            "right": 1.2
+          },
+          "colors": [
+            "transparente"
+          ]
+        },
+        "supplier": {
+          "name": "best supplier",
+          "address": {
+            "street": "Glass Street",
+            "number": "1",
+            "floor": "1",
+            "door": "1-A",
+            "city": "Glass city",
+            "postal_code": "12345",
+            "country": "Glassland"
+          },
+          "phone": "999888777",
+          "fax": "123456789",
+          "nif": "12121212A"
+        }
+      },
+      "quantity": 1,
+      "total_price": 100,
+      "sale_date": "2023-06-29T10:00:00Z"
+    }
+  ]
+}]
