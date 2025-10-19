@@ -1,51 +1,60 @@
-[{
-  "_id": {
-    "$oid": "68ce814aeac7856fa399fb45"
-  },
-  "brand": "Carrera",
-  "frame": {
-    "color": "red",
-    "type": "metallic"
-  },
-  "lens": [
-    "transparent"
-  ],
-  "supplier": {
-    "name": "best supplier",
-    "address": {
-      "street": "Glass Street",
-      "number": "1",
-      "floor": "1",
-      "door": "1-A",
-      "city": "Glass city",
-      "postal_code": "12345",
-      "country": "Glassland"
-    },
-    "phone": "999888777",
-    "fax": "123456789",
-    "nif": "12121212A"
-  },
-  "price": 105.75,
-  "sales_history": [
+{
+  "glasses": [
     {
-      "client": {
-        "name": "Lois",
-        "address": {
-          "street": "Glass Street",
-          "number": "1",
-          "floor": "1",
-          "door": "1-A",
-          "city": "Glass city",
-          "postal_code": "12345",
-          "country": "Glassland"
-        },
-        "phone": "123123123",
-        "email": "lois@lois.gal",
-        "registration_date": "2023-06-29T10:00:00Z",
-        "recommended_by": null
+      "_id": { "$oid": "68ce814aeac7856fa399fb45" },
+      "brand": "Carrera",
+      "frame": { "color": "red", "type": "metallic" },
+      "lens": ["transparent"],
+      "supplier_id": { "$oid": "68ce814aeac7856fa399fb46" },
+      "price": 105.75,
+      "last_sale": {
+        "client_id": { "$oid": "68ce814aeac7856fa399fb47" },
+        "sold_by": { "$oid": "68ce814aeac7856fa399fb48" },
+        "sale_date": "2023-06-29T10:00:00Z"
+      }
+    }
+  ],
+  "clients": [
+    {
+      "_id": { "$oid": "68ce814aeac7856fa399fb47" },
+      "name": "Lois",
+      "address": {
+        "street": "Glass Street",
+        "number": 1,
+        "floor": 1,
+        "door": "1-A",
+        "city": "Glass city",
+        "postal_code": "12345",
+        "country": "Glassland"
       },
-      "employee": "María",
-      "sale_date": "2023-06-29T10:00:00Z"
+      "phone": "123123123",
+      "email": "lois@lois.gal",
+      "registration_date": "2023-06-29T10:00:00Z",
+      "recommended_by": null
+    }
+  ],
+  "employees": [
+    {
+      "_id": { "$oid": "68ce814aeac7856fa399fb48" },
+      "name": "María"
+    }
+  ],
+  "suppliers": [
+    {
+      "_id": { "$oid": "68ce814aeac7856fa399fb46" },
+      "name": "best supplier",
+      "address": {
+        "street": "Glass Street",
+        "number": 1,
+        "floor": 1,
+        "door": "1-A",
+        "city": "Glass city",
+        "postal_code": "12345",
+        "country": "Glassland"
+      },
+      "phone": "999888777",
+      "fax": "123456789",
+      "nif": "12121212A"
     }
   ]
-}]
+}

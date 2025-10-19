@@ -1,51 +1,61 @@
-[{
-  "_id": "60dbf6f4f1c2b34a6c9e0004",
-  "name": "Lois",
-  "address": "Carrer Canarias 20",
-  "phone": "666111222",
-  "email": "lois@lois.gal",
-  "register_date": "2023-06-29T10:00:00Z",
-  "recommended_by": null,
-  "last_shoppings": [
+{
+  "clients": [
     {
-      "employee": {
-        "name": "Pepe"
+      "_id": { "$oid": "60dbf6f4f1c2b34a6c9e0004" },
+      "name": "Lois",
+      "address": "Carrer Canarias 20",
+      "phone": "666111222",
+      "email": "lois@lois.gal",
+      "register_date": "2023-06-29T10:00:00Z",
+      "recommended_by": null
+    }
+  ],
+  "employees": [
+    {
+      "_id": { "$oid": "60dbf6f4f1c2b34a6c9e1004" },
+      "name": "Pepe"
+    }
+  ],
+  "suppliers": [
+    {
+      "_id": { "$oid": "60dbf6f4f1c2b34a6c9e1003" },
+      "name": "best supplier",
+      "address": {
+        "street": "Glass Street",
+        "number": 1,
+        "floor": 1,
+        "door": "1-A",
+        "city": "Glass city",
+        "postal_code": "12345",
+        "country": "Glassland"
       },
-      "glasses": {
-        "price": 100,
-        "brand": "Carrera",
-        "frame": {
-          "color": "red",
-          "type": "paste"
-        },
-        "lens": {
-          "graduation": {
-            "left": 2.4,
-            "right": 1.2
-          },
-          "colors": [
-            "transparente"
-          ]
-        },
-        "supplier": {
-          "name": "best supplier",
-          "address": {
-            "street": "Glass Street",
-            "number": "1",
-            "floor": "1",
-            "door": "1-A",
-            "city": "Glass city",
-            "postal_code": "12345",
-            "country": "Glassland"
-          },
-          "phone": "999888777",
-          "fax": "123456789",
-          "nif": "12121212A"
-        }
+      "phone": "999888777",
+      "fax": "123456789",
+      "nif": "12121212A"
+    }
+  ],
+  "glasses": [
+    {
+      "_id": { "$oid": "60dbf6f4f1c2b34a6c9e1002" },
+      "brand": "Carrera",
+      "price": 100,
+      "frame": { "color": "red", "type": "paste" },
+      "lens": {
+        "graduation": { "left": 2.4, "right": 1.2 },
+        "colors": ["transparente"]
       },
+      "supplier_id": { "$oid": "60dbf6f4f1c2b34a6c9e1003" }
+    }
+  ],
+  "sales": [
+    {
+      "_id": { "$oid": "60dbf6f4f1c2b34a6c9e1005" },
+      "client_id": { "$oid": "60dbf6f4f1c2b34a6c9e0004" },
+      "glasses_id": { "$oid": "60dbf6f4f1c2b34a6c9e1002" },
+      "employee_id": { "$oid": "60dbf6f4f1c2b34a6c9e1004" },
       "quantity": 1,
       "total_price": 100,
       "sale_date": "2023-06-29T10:00:00Z"
     }
   ]
-}]
+}
